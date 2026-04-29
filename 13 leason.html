@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 13 - Nested Flexbox</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .box {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* 13a */
+    .flex-13a {
+      display: flex;
+    }
+
+    .left-a {
+      width: 100px;
+      background: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-a {
+      width: 200px;
+      background: lightblue;
+    }
+
+    /* 13b */
+    .flex-13b {
+      display: flex;
+    }
+
+    .left-b {
+      width: 100px;
+      background: pink;
+    }
+
+    .right-b {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      background: lightblue;
+    }
+
+    .bottom-b {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Gmail (13c–13e) */
+    .email {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .desc {
+      color: gray;
+      font-size: 13px;
+    }
+
+    /* Twitter (13f–13g) */
+    .tweet {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tweet-content {
+      flex: 1;
+    }
+
+    .header {
+      display: flex;
+      gap: 5px;
+      font-weight: bold;
+    }
+
+    .username {
+      color: gray;
+      font-weight: normal;
+    }
+
+    .link {
+      display: flex;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+
+    .thumbnail {
+      width: 100px;
+      background: gray;
+    }
+
+    .link-info {
+      padding: 5px;
+      font-size: 13px;
+    }
+
+  </style>
+</head>
+<body>
+
+ <br>
+ <h1>13a</h1>
+  <div class="section">
+    <h3>13a</h3>
+    <div class="flex-13a">
+      <div class="left-a">
+        <div class="box">item1</div>
+      </div>
+      <div class="right-a"></div>
+    </div>
+  </div>
+
+  <br>
+  <h1>13b</h1>
+  <div class="section">
+    <h3>13b</h3>
+    <div class="flex-13b">
+      <div class="left-b"></div>
+
+      <div class="right-b">
+        <div class="box">row1</div>
+        <div class="bottom-b">
+          <div class="box">row2</div>
+          <div class="box">row2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+<h1>13c–13e</h1>
+  <div class="section">
+    <h3>13c–13e (Gmail Layout)</h3>
+
+    <div class="email">
+      <img src="https://via.placeholder.com/40" class="avatar">
+      <div class="content">
+        <div class="top">
+          <span>Chewy Promotions</span>
+          <span>4:58 PM</span>
+        </div>
+        <div><b>Biggest sales of the year!</b></div>
+        <div class="desc">Hey there! We're writing to tell you about our latest deals...</div>
+      </div>
+    </div>
+
+    <div class="email">
+      <img src="https://via.placeholder.com/40" class="avatar">
+      <div class="content">
+        <div class="top">
+          <span>Best Buy</span>
+          <span>12:32 PM</span>
+        </div>
+        <div><b>Your Best Buy Receipt</b></div>
+        <div class="desc">Thank you for shopping at Best Buy...</div>
+      </div>
+    </div>
+
+  </div>
+
+<br>
+<h1>13f–13g</h1>
+  <div class="section">
+    <h3>13f–13g (Twitter Layout)</h3>
+
+    <div class="tweet">
+      <img src="https://via.placeholder.com/40" class="avatar">
+
+      <div class="tweet-content">
+        <div class="header">
+          <span>supersimple.dev</span>
+          <span class="username">@SuperSimpleDev</span>
+        </div>
+
+        <div>
+          What is backend web development? A complete overview.
+        </div>
+
+        <div class="link">
+          <div class="thumbnail"></div>
+          <div class="link-info">
+            <div>youtube.com</div>
+            <div><b>Backend web development - a complete overview</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

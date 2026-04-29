@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 12 Flexbox</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    .container {
+      margin-bottom: 30px;
+    }
+
+    .box {
+      background-color: lightblue;
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* 12a */
+    .flex-12a {
+      display: flex;
+    }
+
+    .item-200 {
+      width: 200px;
+      background-color: lightblue;
+    }
+
+    .item-75 {
+      width: 75px;
+      background-color: pink;
+    }
+
+    /* 12b */
+    .flex-12b {
+      display: flex;
+    }
+
+    .item-50 {
+      width: 50px;
+      background-color: lightblue;
+    }
+
+    .item-flex {
+      flex: 1;
+      background-color: lightgray;
+    }
+
+    .item-75b {
+      width: 75px;
+      background-color: lightpink;
+    }
+
+    /* 12c */
+    .flex-12c {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* 12d */
+    .flex-12d {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid gray;
+      height: 50px;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    /* 12e */
+    .card {
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .card-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+    }
+
+    .notif {
+      background-color: blue;
+      color: white;
+      border-radius: 50px;
+      padding: 2px 8px;
+      font-size: 12px;
+    }
+
+    /* 12f */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6f4bb8;
+      padding: 10px;
+      color: white;
+    }
+
+    .search {
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 5px;
+      border-radius: 20px;
+      border: none;
+    }
+
+    .btn {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+
+  </style>
+</head>
+<body>
+
+<br>
+<h1>12a</h1>
+  <div class="container flex-12a">
+    <div class="item-200 box">200px</div>
+    <div class="item-75 box">75px</div>
+  </div>
+
+<br>
+<h1>12b</h1>
+  <div class="container flex-12b">
+    <div class="item-50 box">item1</div>
+    <div class="item-flex box">item2</div>
+    <div class="item-75b box">item3</div>
+  </div>
+
+<br>
+<h1>12c</h1>
+    <div class="container flex-12c">
+    <div class="box">item1</div>
+    <div class="box">item2</div>
+    <div class="box">item3</div>
+    <div class="box">item4</div>
+  </div>
+
+<br>
+<h1>12d</h1>
+    <div class="container flex-12d">
+    <div class="box">item1</div>
+    <div class="box">item2</div>
+  </div>
+
+<br>
+<h1>12e</h1>
+    <div class="container card">
+    <div class="card-row">
+      <span>Home</span>
+      <span class="notif">14</span>
+    </div>
+    <div class="card-row">
+      <span>Notifications</span>
+      <span class="notif">3</span>
+    </div>
+    <div class="card-row">
+      <span>Messages</span>
+      <span class="notif">5</span>
+    </div>
+  </div>
+
+<br>
+<h1>12f</h1>  
+    <div class="container navbar">
+    <div>Home</div>
+    <div class="search">
+      <input type="text" placeholder="Search">
+    </div>
+    <button class="btn">Download</button>
+  </div>
+
+</body>
+</html>
