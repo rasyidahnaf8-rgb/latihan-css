@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.logo {
+  height: 32px;
+}
+
+.top-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.top-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.container {
+  max-width: 470px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.stories {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px 16px;
+  overflow-x: auto;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.story-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ccc;
+  border: 2px solid #e1306c;
+  padding: 2px;
+}
+
+.post {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ccc;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.post-image {
+  width: 100%;
+  background-color: #ddd;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  gap: 16px;
+  padding: 12px;
+}
+
+.action-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.likes {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 12px;
+}
+
+.caption {
+  font-size: 14px;
+  padding: 4px 12px 12px;
+}

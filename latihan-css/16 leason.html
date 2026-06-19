@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lesson 16</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+
+      body {
+        font-family: Arial;
+      }
+
+      .video-card {
+        width: 300px;
+      }
+
+      .thumbnail-container {
+        position: relative;
+      }
+
+      .thumbnail {
+        width: 100%;
+        cursor: pointer;
+      }
+
+      .time {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        background: black;
+        color: white;
+        font-size: 12px;
+        padding: 2px 5px;
+      }
+
+      .video-info {
+        display: flex;
+        margin-top: 10px;
+      }
+
+      .channel-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .channel-pic {
+        width: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .tooltip {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+      }
+
+      .channel-container:hover .tooltip {
+        opacity: 1;
+      }
+
+      .tooltip-content {
+        display: flex;
+        gap: 10px;
+      }
+
+      .tooltip img {
+        width: 40px;
+        border-radius: 50%;
+      }
+
+      .title {
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .meta {
+        color: gray;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-card">
+      <a href="https://youtube.com" target="_blank">
+        <div class="thumbnail-container">
+          <img src="../lat_image/thumb-5.jpg" class="thumbnail" />
+          <div class="time">14:20</div>
+        </div>
+      </a>
+
+      <div class="video-info">
+        <div class="channel-container">
+          <a href="https://youtube.com" target="_blank">
+            <img src="../lat_image/avatar-1.jpg" class="channel-pic" />
+          </a>
+
+          <div class="tooltip">
+            <div class="tooltip-content">
+              <img src="../lat_image/avatar-1.jpg" />
+              <div>
+                <div><b>Cartethyia</b></div>
+                <div class="meta">30M subscribers</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-left: 10px">
+          <a href="https://youtube.com" target="_blank" class="title">
+            Blessed Maiden of Rinascita
+          </a>
+
+          <div class="meta">Cartethyia</div>
+          <div class="meta">3.4M views · 6 months ago</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

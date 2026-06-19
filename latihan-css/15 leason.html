@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lesson 15 - Position Absolute</title>
+    <style>
+      body {
+        height: 3000px;
+        font-family: Arial;
+      }
+
+      /* 15a */
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: black;
+        color: white;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box-15a {
+        position: relative;
+        width: 300px;
+        height: 150px;
+        background: lightgray;
+        margin-bottom: 40px;
+      }
+
+      /* 15b */
+      .video-box {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 320px;
+        height: 180px;
+        background: gray;
+      }
+
+      /* 15c */
+      .close-inside {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        background: black;
+        color: white;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* 15d */
+      .timestamp {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background: black;
+        color: white;
+        font-size: 12px;
+        padding: 2px 5px;
+      }
+
+      /* 15e & 15f */
+      .product {
+        position: relative;
+        display: inline-block;
+        margin-top: 40px;
+      }
+
+      .product img {
+        width: 200px;
+      }
+
+      .discount {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: black;
+        color: white;
+        padding: 5px;
+        font-size: 12px;
+      }
+
+      .overlay-cart {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40%;
+        background: rgba(255, 255, 255, 0.8);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cart-btn {
+        padding: 5px 10px;
+        border: 1px solid black;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="box-15a">
+      <div class="close-btn">X</div>
+    </div>
+
+    <div class="video-box">
+      <div class="close-inside">X</div>
+      <div class="timestamp">0:29</div>
+    </div>
+
+    <div class="product">
+      <img src="../lat_image/Cartethyia.jpg" alt="Product Image" />
+
+      <div class="discount">20% OFF</div>
+
+      <div class="overlay-cart">
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
